@@ -1,0 +1,31 @@
+.getDataForm {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+  align-items: end; 
+}
+
+input, button {
+  box-sizing: border-box;
+  border: 2px solid #696969;
+  border-radius: 0.2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  width: 10%;
+}
+
+.dataField, .wayField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 8vh;
+  justify-content: space-between;
+}
+
+.dataField input {
+  width: 100%;
+}

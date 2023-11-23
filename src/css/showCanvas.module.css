@@ -1,0 +1,30 @@
+.showBlockData {
+  display: flex;
+  flex-direction: column;
+}
+
+.showHeaders {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showData {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.renderData {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editElems {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  justify-content: space-between;
+}
+
+.editElems span {
+  cursor: pointer;
+}
