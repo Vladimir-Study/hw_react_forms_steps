@@ -7,9 +7,6 @@ import { IForm } from './components/Type'
 function App() {
 
   let [allData, updateData] = useState<Array<IForm>>([])
-  const updateArray = (addData) => {
-    updateData([...allData, addData]);
-  }
 
   const sumWay:Array<IForm> = allData.filter((item) => item.date === Array.from(allData)[allData.length-1].date)
   if (sumWay.length >= 2) {
@@ -24,8 +21,8 @@ function App() {
 
   return (
     <>
-      < GetData updateFanc={updateArray}/>
-      < ShowData data={allData}/>
+      < GetData updateFanc={updateData} data={allData}/>
+      < ShowData data={allData} deleteData={updateData}/>
     </>
   )
 }

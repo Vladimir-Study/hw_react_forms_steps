@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import style from '../css/form.module.css'
 import { IForm, arrayData } from './Type'
 
-export function GetData({updateFanc}) {
+export function GetData({updateFanc, data}) {
 
   const [formData, getData] = useState<IForm>({
     date: '',
@@ -10,7 +10,7 @@ export function GetData({updateFanc}) {
   })
   const handlerOnSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    updateFanc(formData);
+    updateFanc([...data, formData]);
   }
 
   const handlerOfChange = ({target}) => {
